@@ -1,0 +1,63 @@
+# ─── Virtual environments ────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Python cache ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── SQLite databases (ephemeral; not for version control) ───────────────────
+*.db
+*.sqlite
+*.sqlite3
+review_queue.db
+
+# ─── Secrets and credentials ─────────────────────────────────────────────────
+.env
+.env.*
+secrets.toml
+.streamlit/secrets.toml
+*.key
+*.pem
+
+# ─── Jupyter / Colab ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── OS and editor artefacts ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ─── Test and coverage ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+
+# ─── Large raw datasets (never commit the Kaggle training data) ──────────────
+data/
+*.csv.gz
+*.zip
+
+# Note: artifacts/*.joblib, artifacts/*.json, artifacts/*.csv ARE committed
+# because they are the trained model artifacts needed for inference.
+# The heldout_test_predictions.csv is ~66 KB and is committed for evaluation charts.
+# Exclude only very large or sensitive files below if needed:
+# artifacts/opportunityguard_duplicate_index.joblib   ← ~37 MB — commit if repo allows

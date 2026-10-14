@@ -1,0 +1,13 @@
+# OpportunityGuard AI — production requirements
+# Pinned to match the scikit-learn version used to train the model (1.9.1).
+# Do NOT change scikit-learn version without retraining or re-exporting the model.
+# pyarrow is pinned to 18.1.0 for compatibility with NumPy 1.26.4 and Streamlit 1.66.0.
+
+streamlit==1.66.0
+scikit-learn==1.9.1
+numpy==1.26.4
+pyarrow==18.1.0
+pandas==2.3.3
+scipy==1.17.1
+joblib==1.6.0
+plotly==7.1.0

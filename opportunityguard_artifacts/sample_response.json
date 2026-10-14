@@ -1,0 +1,27 @@
+{
+  "model_version": "opportunityguard-emscad-logreg-v1",
+  "model_risk_score": 6.32,
+  "model_prediction": "Not flagged by model",
+  "model_threshold": 0.78,
+  "rule_score": 35,
+  "composite_risk_score": 16,
+  "assessment": "Lower detected risk \u2014 still verify independently",
+  "needs_human_review": true,
+  "warnings": [
+    {
+      "code": "upfront_payment_language",
+      "severity": "high",
+      "points": 35,
+      "evidence": "Matched phrase(s): registration fee",
+      "recommendation": "Do not pay to secure a job; verify independently."
+    }
+  ],
+  "similar_listings": [
+    {
+      "similarity": 0.13877097038132052,
+      "reference_index": 17428,
+      "description_preview": "Assistant Instructor: Web Development Immersive About us:Bitmaker Labs is Canada's premier web development learning centre and the largest of its kind in the country. We empower tech enthusiasts to build their ideas. We currently offer both"
+    }
+  ],
+  "disclaimer": "Risk indicator only, not proof of fraud. Verify independently."
+}

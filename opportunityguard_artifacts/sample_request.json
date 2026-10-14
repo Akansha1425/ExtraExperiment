@@ -1,0 +1,22 @@
+{
+  "title": "Remote Software Development Intern",
+  "company_name": "Example Technology Ltd",
+  "company_profile": "Small software services company.",
+  "website": "https://example.com",
+  "email": "careers@example.com",
+  "phone": "",
+  "description": "Build web applications with a mentor.",
+  "requirements": "Basic JavaScript and HTML.",
+  "benefits": "Mentorship",
+  "salary_claim": "Stipend discussed during interview",
+  "deadline": "2030-12-31",
+  "employment_type": "Internship",
+  "required_experience": "Entry level",
+  "required_education": "Bachelor's Degree",
+  "industry": "IT",
+  "function": "Engineering",
+  "location": "Remote",
+  "telecommuting": 1,
+  "has_company_logo": 1,
+  "has_questions": 0
+}

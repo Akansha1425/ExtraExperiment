@@ -1,0 +1,25 @@
+{
+  "columns": [
+    "job_id",
+    "title",
+    "location",
+    "department",
+    "salary_range",
+    "company_profile",
+    "description",
+    "requirements",
+    "benefits",
+    "telecommuting",
+    "has_company_logo",
+    "has_questions",
+    "employment_type",
+    "required_experience",
+    "required_education",
+    "industry",
+    "function",
+    "fraudulent"
+  ],
+  "rows_after_deduplication": 17880,
+  "fraudulent_count": 866,
+  "legitimate_count": 17014
+}

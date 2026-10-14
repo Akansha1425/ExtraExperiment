@@ -1,0 +1,59 @@
+{
+  "project_name": "OpportunityGuard AI",
+  "model_version": "opportunityguard-emscad-logreg-v1",
+  "decision_threshold": 0.7799999999999999,
+  "model_fields": [
+    "model_text",
+    "employment_type",
+    "required_experience",
+    "required_education",
+    "industry",
+    "function",
+    "location",
+    "telecommuting",
+    "has_company_logo",
+    "has_questions"
+  ],
+  "text_fields": [
+    "title",
+    "company_profile",
+    "description",
+    "requirements",
+    "benefits",
+    "salary_range"
+  ],
+  "categorical_fields": [
+    "employment_type",
+    "required_experience",
+    "required_education",
+    "industry",
+    "function",
+    "location"
+  ],
+  "numeric_fields": [
+    "telecommuting",
+    "has_company_logo",
+    "has_questions"
+  ],
+  "composite_score_formula": "round(0.65 * model_risk_percent + 0.35 * rule_score)",
+  "composite_score_note": "Heuristic risk indicator, not calibrated probability.",
+  "duplicate_similarity_threshold": 0.85,
+  "dataset_url": "https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction",
+  "held_out_test_metrics": {
+    "Accuracy": 0.9854586129753915,
+    "Balanced accuracy": 0.8792018326501085,
+    "Fraud precision": 0.9252336448598131,
+    "Fraud recall": 0.7615384615384615,
+    "Fraud F1": 0.8354430379746836,
+    "ROC-AUC": 0.9900560646250302,
+    "Average precision / PR-AUC": 0.9275942741561481,
+    "MCC": 0.8322080815322768,
+    "Brier score": 0.02160045207558754,
+    "Log loss": 0.08815940898739191
+  },
+  "limitations": [
+    "Historical dataset; current patterns may differ.",
+    "Dataset does not label every custom rule.",
+    "Predictions are not proof of fraud."
+  ]
+}
